@@ -120,9 +120,9 @@ async def main_loop():
     while True:
         print("⏳ Ejecutando escaneo de mercado...")
         await scan_market()
-        print("⏲️ Esperando 2 horas para próxima ejecución...
-")
+        print("⏲️ Esperando 2 horas para próxima ejecución...\n")
         await asyncio.sleep(2 * 60 * 60)
 
 if __name__ == "__main__":
     asyncio.run(main_loop())
+        
